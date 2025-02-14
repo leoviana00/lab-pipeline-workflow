@@ -2,6 +2,7 @@
 
 ## Current - Work in progress
 ### Merges
+*  Merge pull request #7 from leoviana00/feature/setup/cluster [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/7f7ed370c0fa028d434c2ff0833f8f97f5753545)
 *  Merge pull request #6 from leoviana00/dev [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/e9a243f5430ee86f042ab66f6b90ab76f3eb7a8f)
 *  Merge pull request #5 from leoviana00/main [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ba6c34b42b3f41c8360d786c47d03d577aa557d6)
 *  Merge pull request #4 from leoviana00/dev [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/108784f41b4938e950c6283d3846ce8980c9e166)
@@ -10,6 +11,9 @@
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/95cac43044a600dc4c7ed3790649752eb1d5d704)
 *  feat(setup): arquivo de config para o kind cluster [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/02ed40b9042a61981c3ef3aa5800fb50d0e1a768)
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/37af989773f6c60913044398ddcf8cb750d24949)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/df3454450e210296e3d8f69f95c4f2938f689eee)
+*  feat(dns); daemonset dns nodes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/f60707fae3645c14cbb7ddf1ca08a601b9f8b91a)
+*  feat(automacao): add makefile [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/d05b8dbc623049c3e1bfe7c57fd8a721b43aa3e3)
 
 
 
