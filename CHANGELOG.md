@@ -2,11 +2,14 @@
 
 ## Current - Work in progress
 ### Merges
+*  Merge pull request #6 from leoviana00/dev [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/e9a243f5430ee86f042ab66f6b90ab76f3eb7a8f)
+*  Merge pull request #5 from leoviana00/main [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ba6c34b42b3f41c8360d786c47d03d577aa557d6)
 *  Merge pull request #4 from leoviana00/dev [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/108784f41b4938e950c6283d3846ce8980c9e166)
 *  Merge pull request #3 from leoviana00/featre/setup/cluster [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/cad79288fc5997470ec73bc9f08cae509c9eb718)
 ### Commits
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/95cac43044a600dc4c7ed3790649752eb1d5d704)
 *  feat(setup): arquivo de config para o kind cluster [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/02ed40b9042a61981c3ef3aa5800fb50d0e1a768)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/37af989773f6c60913044398ddcf8cb750d24949)
 
 
 
