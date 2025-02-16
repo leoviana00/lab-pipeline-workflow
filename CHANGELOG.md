@@ -2,6 +2,14 @@
 
 ## Current - Work in progress
 ### Merges
+
+### Commits
+
+
+
+## 0.2.0 - (2025-02-14)
+### Merges
+*  Merge pull request #8 from leoviana00/feature/setup/cluster [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/66ae73b7aab5e47427f50a4989bd088c91fceb4a)
 *  Merge pull request #7 from leoviana00/feature/setup/cluster [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/7f7ed370c0fa028d434c2ff0833f8f97f5753545)
 *  Merge pull request #6 from leoviana00/dev [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/e9a243f5430ee86f042ab66f6b90ab76f3eb7a8f)
 *  Merge pull request #5 from leoviana00/main [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ba6c34b42b3f41c8360d786c47d03d577aa557d6)
@@ -14,6 +22,8 @@
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/df3454450e210296e3d8f69f95c4f2938f689eee)
 *  feat(dns); daemonset dns nodes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/f60707fae3645c14cbb7ddf1ca08a601b9f8b91a)
 *  feat(automacao): add makefile [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/d05b8dbc623049c3e1bfe7c57fd8a721b43aa3e3)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/aadb5acce4572f2c2503c8aeedd6ecf0b86d9840)
+*  docs(tag): tagueamento e versionamento settup cluster [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/c646afcb3064d16704106d309ffdfd58fda57ecf)
 
 
 
@@ -35,8 +45,9 @@
 *  docs(changelog): add changelog ao projeto [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6930dfb71846b1d7507cdba5befe6d924b23d568)
 ## 📝 Metadata
 ```
-This version -------- 0.1.0
+This version -------- 0.2.0
+0.1.0
 0.0.0
-Previous version ---- 0.0.0
-Total commits ------- 4
+Previous version ---- 0.1.0
+Total commits ------- 18
 ```
