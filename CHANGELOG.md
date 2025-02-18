@@ -2,6 +2,7 @@
 
 ## Current - Work in progress
 ### Merges
+*  Merge pull request #10 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/c6f5db16f3157cc521776725b988bb9f2babfa16)
 *  Merge pull request #9 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6d06105c1de9553e82b4f183db3a36390a3e25a4)
 ### Commits
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/375a3d2499ee947c589dd58d9461317d9c5ca691)
@@ -9,6 +10,8 @@
 *  feat(nginx): install ingress nginx [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/dfc31d145c792e01f1500bb9698a6fd0c29f0ccc)
 *  feat(helmfile): migrando nginx para helmfile [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/8854637b79464f4a4d988372a999ee9832f4cc70)
 *  feat(jenkins): install and config jenkins [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/98d2d66f016e1e4157dcf51cfec3c3d156226c72)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/db0fae808cc127d1f4c2c6c87fe89af1580c8985)
+*  feat(jenkins); get secrets makefile [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/1f980ce2e239ed5028226d08323fb2fea0baa65a)
 
 
 
