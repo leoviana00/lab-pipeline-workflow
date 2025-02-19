@@ -3,6 +3,8 @@ repositories:
    url: https://kubernetes.github.io/ingress-nginx  
  - name: jenkins
    url: https://charts.jenkins.io
+ - name: gitea
+   url: https://dl.gitea.com/charts/
 
 releases:
 
@@ -21,3 +23,11 @@ releases:
   version: 5.8.12
   values:
     - helm-tools/jenkins/values.yaml
+
+- name: gitea
+  namespace: gitea
+  createNamespace: true
+  chart: gitea/gitea
+  version: 10.5.0
+  values:
+    - helm-tools/gitea/values.yaml
