@@ -2,6 +2,14 @@
 
 ## Current - Work in progress
 ### Merges
+
+### Commits
+
+
+
+## 1.0.0 - (2025-02-15)
+### Merges
+*  Merge pull request #14 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/2144616a0df4acf530ba17c8e8c25939d0b59607)
 *  Merge pull request #13 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/c8aa7af451c047ac5adbb39be6a34c664d9b078b)
 *  Merge pull request #12 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/f0554024d5be255f6c926cc7ab75e365c733b77d)
 *  Merge pull request #11 from leoviana00/docs/project [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/611de9f8836ae67bd05e1b8ed9960fcbc9c36d28)
@@ -32,6 +40,9 @@
 *  feat(makefile): gerenciamento passwd com makefile [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/a89d6408ed0dda485df4d26940d966cb2abeab99)
 *  docs(metallb): add passos do metallb [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/78e007fdc3d122b3e8962266667a458b521acd43)
 *  docs(readme): update readme [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/13c87a3aa8ab3c5f8958456965172b58a5967aaa)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/e4eca14da569ca6eec9952868968c87fca37c13a)
+*  docs(changelog): Tagueamento e empacotamento das alterações [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/9e0251907ddd1c24f604e6ddf140cfbef7154640)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/70bf655202e994f6156d930000bcb5759be44ce0)
 
 
 
@@ -73,9 +84,10 @@
 *  docs(changelog): add changelog ao projeto [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6930dfb71846b1d7507cdba5befe6d924b23d568)
 ## 📝 Metadata
 ```
-This version -------- 0.2.0
+This version -------- 1.0.0
+0.2.0
 0.1.0
 0.0.0
-Previous version ---- 0.1.0
-Total commits ------- 18
+Previous version ---- 0.2.0
+Total commits ------- 51
 ```
