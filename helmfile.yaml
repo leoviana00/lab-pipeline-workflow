@@ -5,6 +5,14 @@ repositories:
    url: https://charts.jenkins.io
  - name: gitea
    url: https://dl.gitea.com/charts/
+ - name: harbor
+   url: https://helm.goharbor.io
+ - name: sonarqube
+   url: https://SonarSource.github.io/helm-chart-sonarqube
+ - name: argo
+   url: https://argoproj.github.io/argo-helm
+ - name: empathyco
+   url: https://empathyco.github.io/helm-charts/
 
 releases:
 
@@ -31,3 +39,35 @@ releases:
   version: 10.5.0
   values:
     - helm-tools/gitea/values.yaml
+
+- name: harbor
+  namespace: harbor
+  createNamespace: true
+  chart: harbor/harbor
+  version: 1.16.2
+  values:
+    - helm-tools/harbor/values.yaml
+
+- name: sonarqube
+  namespace: sonarqube
+  createNamespace: true
+  chart: sonarqube/sonarqube
+  version: 10.8.1
+  values:
+    - helm-tools/sonarqube/values.yaml
+
+- name: argo
+  namespace: argocd
+  createNamespace: true
+  chart: argo/argo-cd
+  version: 7.8.2
+  values:
+    - helm-tools/argocd/values.yaml
+
+- name: imagepullsecret-patcher
+  namespace: imagepullsecret-patcher
+  createNamespace: true
+  chart: empathyco/imagepullsecret-patcher
+  version: 1.0.0
+  values:
+    - helm-tools/imagepullsecret-patcher/values.yaml
