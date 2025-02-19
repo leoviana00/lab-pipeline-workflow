@@ -2,6 +2,7 @@
 
 ## Current - Work in progress
 ### Merges
+*  Merge pull request #12 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/f0554024d5be255f6c926cc7ab75e365c733b77d)
 *  Merge pull request #11 from leoviana00/docs/project [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/611de9f8836ae67bd05e1b8ed9960fcbc9c36d28)
 *  Merge pull request #10 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/c6f5db16f3157cc521776725b988bb9f2babfa16)
 *  Merge pull request #9 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6d06105c1de9553e82b4f183db3a36390a3e25a4)
@@ -15,6 +16,12 @@
 *  feat(jenkins); get secrets makefile [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/1f980ce2e239ed5028226d08323fb2fea0baa65a)
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/43668f762687de58b9eee22120f9ad617895223b)
 *  docs(project): documentacao inicial [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/5bcf0a320a834273f786e85ed5cdb60c38047467)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/27bfe696a68950d1dfb75be196ff0cc50a52eeae)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/c51c8d46065b92e5b0042b7806861bea00666e50)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/675a4221d46f625731c3b46560a1ee24492f67b5)
+*  docs(project): documentacao inicial [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ed49672fbc5fa753b96449099cb63fd981474dc5)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b15e89ddfb7a122451eeac514f06e14813dc3dff)
+*  feat(gitea): install and config gitea [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/1c1fe8d29ac9dbfc0834d1c2ff91841ecc20ef2b)
 
 
 
