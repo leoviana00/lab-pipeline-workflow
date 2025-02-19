@@ -4,6 +4,14 @@
 
 ## Metallb
 
+- Identificar a rede utilizada pelo kind
+
+```bash
+docker network ls | grep kind
+docker inspect <network>
+docker inspect kind | jq -r '.[].IPAM.Config[0].Subnet'
+```
+
 - Instalação do Metallb
 
 ```bash
@@ -116,4 +124,21 @@ kubectl get secret -n jenkins jenkins -ojson | jq -r '.data."jenkins-admin-passw
 - [Repositório](https://gitea.com/gitea/helm-chart/src/tag/v10.5.0/)
 - [Values utilizado](../helm-tools/gitea/values.yaml)
 
+## Harbor
+
+- [Repositório](https://github.com/goharbor/harbor-helm/tree/v1.16.2)
+- [Values utilizado](../helm-tools/harbor/values.yaml)
+
+## Sonarqube
+- [Repositório](https://github.com/SonarSource/helm-chart-sonarqube/tree/sonarqube-10.8.1-sonarqube-dce-10.8.1/charts/sonarqube)
+- [Values utilizado](../helm-tools/sonarqube/values.yaml)
+
+## Argocd
+- [Repositório](https://github.com/argoproj/argo-helm/tree/argo-cd-7.8.2
+- [Values utilizado](../helm-tools/argocd/values.yaml)
+
+
+## Image Pull Secret Patcher
+- [Repositório](https://artifacthub.io/packages/helm/empathyco/imagepullsecret-patcher)
+- [Values utilizado](../helm-tools/imagepullsecret-patcher/)
 
