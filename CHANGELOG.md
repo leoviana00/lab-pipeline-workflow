@@ -2,6 +2,7 @@
 
 ## Current - Work in progress
 ### Merges
+*  Merge pull request #13 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/c8aa7af451c047ac5adbb39be6a34c664d9b078b)
 *  Merge pull request #12 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/f0554024d5be255f6c926cc7ab75e365c733b77d)
 *  Merge pull request #11 from leoviana00/docs/project [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/611de9f8836ae67bd05e1b8ed9960fcbc9c36d28)
 *  Merge pull request #10 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/c6f5db16f3157cc521776725b988bb9f2babfa16)
@@ -22,6 +23,15 @@
 *  docs(project): documentacao inicial [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ed49672fbc5fa753b96449099cb63fd981474dc5)
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b15e89ddfb7a122451eeac514f06e14813dc3dff)
 *  feat(gitea): install and config gitea [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/1c1fe8d29ac9dbfc0834d1c2ff91841ecc20ef2b)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6552912de720fde776ae78c16e880756a23d962c)
+*  feat(sonar): instalacao e configuracao sonarqube [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/7729b7bebc5500bee8af5a330b4745014305311e)
+*  feat(argo): instalacao e configuracao argo [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ae8d572e41faf8e7b6404103bbfaee7d4cb22a9e)
+*  feat(harbor): instalacao e configuracao do harbor [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/8b60e3692b859503fa9b6cb02ca7d56614035e72)
+*  feat(imagepullsecret): instalacao e configuracao imagepullsecret [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/d3832ab83cd67216645bfafa644cd25d7f7785a6)
+*  feat(helmfile): gerenciamento dos helm charts [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/97560bc6d3f81ab9319ce9aaa095afbea5db9271)
+*  feat(makefile): gerenciamento passwd com makefile [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/a89d6408ed0dda485df4d26940d966cb2abeab99)
+*  docs(metallb): add passos do metallb [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/78e007fdc3d122b3e8962266667a458b521acd43)
+*  docs(readme): update readme [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/13c87a3aa8ab3c5f8958456965172b58a5967aaa)
 
 
 
