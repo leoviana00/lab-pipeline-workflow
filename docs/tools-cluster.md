@@ -124,6 +124,16 @@ kubectl get secret -n jenkins jenkins -ojson | jq -r '.data."jenkins-admin-passw
 - [Repositório](https://gitea.com/gitea/helm-chart/src/tag/v10.5.0/)
 - [Values utilizado](../helm-tools/gitea/values.yaml)
 
+- Expondo porta SSH do Gitea pelo Ingress
+- O NGINX consegue expôr tanto serviços L4 quanto L7. Para isso vamos configurar o values do Chart:
+
+```bash
+tcp:
+  22: "gitea/gitea-ssh:22"
+```
+
+- Com isso, o Service do NGINX vai abrir a porta 22, e qualquer requisição ali, será enviado para o Service gitea-ssh na namespace gitea.
+
 ## Harbor
 
 - [Repositório](https://github.com/goharbor/harbor-helm/tree/v1.16.2)

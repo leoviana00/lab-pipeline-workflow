@@ -36,12 +36,12 @@
 
 ## Roadmap
 
-- [ ] Criar um Setup completo de um ambiente de desenvolvimento com cluster Kubernetes local usando Kind 
-- [ ] Realizar o deploy de todas as ferramentas usando Helm Charts
-- [ ] Automatizar o deploy de todos os Helm Charts usando Helmfile
-- [ ] Configuração de repositórios, chaves e service users no Gitea
-- [ ] Instalação de plugins como código no Jenkins
-- [ ] Integração entre Gitea e Jenkins usando multibranch pipelines via webhook
+- [x] Criar um Setup completo de um ambiente de desenvolvimento com cluster Kubernetes local usando Kind 
+- [x] Realizar o deploy de todas as ferramentas usando Helm Charts
+- [x] Automatizar o deploy de todos os Helm Charts usando Helmfile
+- [x] Configuração de repositórios, chaves e service users no Gitea
+- [x] Instalação de plugins como código no Jenkins
+- [x] Integração entre Gitea e Jenkins usando multibranch pipelines via webhook
 - [ ] Transpondo testes unitários, lint e segurança para a pipeline
 - [ ] Migração e utilização de Shared Libraries no Jenkins para modularidade
 - [ ] Scan de código estático com report no SonarQube e bloqueio com Quality Gate
@@ -55,8 +55,15 @@
 - [ ] Notificação da pipeline [Serviço de notificação a definir ainda]
 
 ## Referências
+- [Kubernetes Kind](https://kind.sigs.k8s.io/)
 - [Metallb](https://metallb.io/)
 - [Descubra como o MetalLB aprimora o balanceamento de carga em ambientes Kubernetes on-premises](https://blog.4linux.com.br/instalando-e-configurando-o-metallb-em-um-ambiente-on-premises/)
+- [Ingress Nginx](https://github.com/kubernetes/ingress-nginx)
 - [Helmfile](https://helmfile.readthedocs.io/en/latest/#installation)
-
-
+- [Jenkins](https://www.jenkins.io/doc/)
+- [Plugin Jenkins Multibranch Scan Webhook](https://plugins.jenkins.io/multibranch-scan-webhook-trigger/)
+- [Plugin Jenkins KUbernetes](https://plugins.jenkins.io/kubernetes/)
+- [Plugin Jenkins Discord Notifier](https://plugins.jenkins.io/discord-notifier/)
+- [Plugin Jenkins Basic Branch Build Strategies](https://plugins.jenkins.io/basic-branch-build-strategies/)
+- [Gitea](https://gitea.com/gitea/helm-chart)
+- [Harbor](https://goharbor.io/docs/2.4.0/)
