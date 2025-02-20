@@ -2,8 +2,11 @@
 
 ## Current - Work in progress
 ### Merges
-
+*  Merge pull request #15 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/51cfca614764b85bba8a5e823c86bac5115320c8)
 ### Commits
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/e8e911284623e5afef7a7c3d5f4f82803b96139f)
+*  docs(readme): update do roadmap [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/995840761b64670c840bfaf4aa25a498847f7834)
+*  docs(gitea): expondo porta 22 [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b84c01a745f842323a85804404bc8041e8c004f4)
 
 
 
