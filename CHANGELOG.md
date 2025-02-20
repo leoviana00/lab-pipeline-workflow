@@ -2,11 +2,21 @@
 
 ## Current - Work in progress
 ### Merges
+
+### Commits
+
+
+
+## 2.0.0 - (2025-02-19)
+### Merges
+*  Merge pull request #16 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/9a7be96fd42deff5f7333135f51065f139a793af)
 *  Merge pull request #15 from leoviana00/feature/infra/helm [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/51cfca614764b85bba8a5e823c86bac5115320c8)
 ### Commits
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/e8e911284623e5afef7a7c3d5f4f82803b96139f)
 *  docs(readme): update do roadmap [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/995840761b64670c840bfaf4aa25a498847f7834)
 *  docs(gitea): expondo porta 22 [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b84c01a745f842323a85804404bc8041e8c004f4)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/36edd6d3ddae38c38a9651a83008719ee692d2ca)
+*  feat(tag): tagueamento para encapsular ajuste do setup de ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/5ca84ebb1204bcafc15b6f234ca9ebca8064a511)
 
 
 
@@ -87,10 +97,11 @@
 *  docs(changelog): add changelog ao projeto [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6930dfb71846b1d7507cdba5befe6d924b23d568)
 ## 📝 Metadata
 ```
-This version -------- 1.0.0
+This version -------- 2.0.0
+1.0.0
 0.2.0
 0.1.0
 0.0.0
-Previous version ---- 0.2.0
-Total commits ------- 51
+Previous version ---- 1.0.0
+Total commits ------- 58
 ```
