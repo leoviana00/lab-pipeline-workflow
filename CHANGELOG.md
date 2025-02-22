@@ -2,10 +2,13 @@
 
 ## Current - Work in progress
 ### Merges
+*  Merge pull request #18 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b8b564abfd4ffad482a65dc8db3104b44e0f4637)
 *  Merge pull request #17 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b90bec7b102d8be9cdeea0a80c70be0b67f43c21)
 ### Commits
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/421526716428c5845194cb7c3782cdca47d3af85)
 *  docs(readme): atualizacao da documentacao [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/aee8a01eae6accab56dbc3f6f95a1e5830992d5b)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/03257942e76c4b9414d34b0e30c0e8011eaeab90)
+*  docs(ci): atualização da documentacao [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/7fa18c6ebfa4124838c33dbd3f8942896848b618)
 
 
 
