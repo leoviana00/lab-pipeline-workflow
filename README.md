@@ -70,3 +70,4 @@
 - [Unable to load local docker image in kind kubernetes cluster](https://stackoverflow.com/questions/73962956/unable-to-load-local-docker-image-in-kind-kubernetes-cluster)
 - [Share a standard Pipeline across multiple projects with Shared Libraries](https://www.jenkins.io/blog/2017/10/02/pipeline-templates-with-shared-libraries/)
 - [Extending with Shared Libraries](https://www.jenkins.io/doc/book/pipeline/shared-libraries/)
+- [SonarScanner CLI](https://docs.sonarsource.com/sonarqube-server/10.8/analyzing-source-code/scanners/sonarscanner/)
