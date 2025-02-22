@@ -152,3 +152,9 @@ tcp:
 - [Repositório](https://artifacthub.io/packages/helm/empathyco/imagepullsecret-patcher)
 - [Values utilizado](../helm-tools/imagepullsecret-patcher/)
 
+## Kind
+- Importando imagem para o cluster (Teste)
+
+```bash
+kind load docker-image restapi-flask:latest --name kind-workflow-pipe
+```
