@@ -143,6 +143,21 @@ tcp:
 - [Repositório](https://github.com/SonarSource/helm-chart-sonarqube/tree/sonarqube-10.8.1-sonarqube-dce-10.8.1/charts/sonarqube)
 - [Values utilizado](../helm-tools/sonarqube/values.yaml)
 
+
+- Sonarscanner
+
+```bash
+docker run \
+    --rm \
+    -e SONAR_HOST_URL="http://sonarqube.localhost.com"  \
+    -e SONAR_TOKEN="sqa_dff6aec5e57e94f8c876015f0da2b0a891f819b9" \
+    -e SONAR_SCANNER_OPTS="-Dsonar.projectKey=test" \
+    --network kind \
+    --add-host sonarqube.localhost.com:172.18.0.50 \
+    -v $(pwd):/usr/src \
+    sonarsource/sonar-scanner-cli
+```
+
 ## Argocd
 - [Repositório](https://github.com/argoproj/argo-helm/tree/argo-cd-7.8.2
 - [Values utilizado](../helm-tools/argocd/values.yaml)
