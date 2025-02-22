@@ -67,3 +67,6 @@
 - [Plugin Jenkins Basic Branch Build Strategies](https://plugins.jenkins.io/basic-branch-build-strategies/)
 - [Gitea](https://gitea.com/gitea/helm-chart)
 - [Harbor](https://goharbor.io/docs/2.4.0/)
+- [Unable to load local docker image in kind kubernetes cluster](https://stackoverflow.com/questions/73962956/unable-to-load-local-docker-image-in-kind-kubernetes-cluster)
+- [Share a standard Pipeline across multiple projects with Shared Libraries](https://www.jenkins.io/blog/2017/10/02/pipeline-templates-with-shared-libraries/)
+- [Extending with Shared Libraries](https://www.jenkins.io/doc/book/pipeline/shared-libraries/)
