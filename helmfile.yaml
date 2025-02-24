@@ -13,7 +13,8 @@ repositories:
    url: https://argoproj.github.io/argo-helm
  - name: empathyco
    url: https://empathyco.github.io/helm-charts/
-
+ - name: uptime-kuma
+   url: https://helm.irsigler.cloud
 releases:
 
 - name: ingress-nginx
@@ -71,3 +72,11 @@ releases:
   version: 1.0.0
   values:
     - helm-tools/imagepullsecret-patcher/values.yaml
+
+- name: uptime-kuma
+  namespace: uptime-kuma
+  createNamespace: true
+  chart: uptime-kuma/uptime-kuma
+  version: 2.21.2
+  values:
+    - helm-tools/uptime-kuma/values.yaml
