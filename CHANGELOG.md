@@ -2,6 +2,7 @@
 
 ## Current - Work in progress
 ### Merges
+*  Merge pull request #22 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/81265a5f9e994342b7fa57ea1ea57aa7793abc46)
 *  Merge pull request #21 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b639ae169fc3c6be85b54ab8ef5538853ff6ec2a)
 *  Merge pull request #20 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/c85e3909af9231eabb59948117a47b2fba36468b)
 *  Merge pull request #19 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ae264599fd5f7072a8f24d34f595e0d90ca28c07)
@@ -18,6 +19,11 @@
 *  feat(harbor): add harbor credentials [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/d6bd780726dae0b9d67f2c7cad4fcd994612cea3)
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/fb1fc413ac077cdf0fa26da6eff28e2b52c53dc3)
 *  docs(kaniko): atualizando documentacao [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/23a4dddc7d9eb994a55b65cb511b26f343dca768)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/70172142b8e6d3b55db89c51dec335418a21d09e)
+*  feat(tools): ajustando parametros do values das ferramentas [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/a691359a5b128f064730249db185e5cae09022d3)
+*  feat(helm): atualizando helmfile [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/5587d1ae6cd49a28193c5bdad50702a95afff74e)
+*  feat(passwd): add etapa passwd no makefile [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6e53b5d7ba0364456fd9e379fb9a043301ae8baa)
+*  feat(library): add shared library jenkins [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/aa8743df0a13224571f906dc561c1bcb773948f8)
 
 
 
