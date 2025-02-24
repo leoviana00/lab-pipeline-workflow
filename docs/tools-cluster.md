@@ -173,3 +173,45 @@ docker run \
 ```bash
 kind load docker-image restapi-flask:latest --name kind-workflow-pipe
 ```
+
+## Kaniko
+
+- Authentication
+
+```bash
+echo -n "user_harbor:passwd_harbor" | base64
+```
+
+- Arquivo de configuração para autenticar no Harbor `config.json`
+
+```json
+{
+    "auths": {
+            "harbor.localhost.com": {
+                    "auth": "YWRtaW46SGFyYm9yMTIzNDU="
+            }
+    }
+}
+```
+
+```bash
+docker run --entrypoint "" \
+  --volume $(pwd):/app \
+  --volume $(pwd)/config.json:/kaniko/.docker/config.json \
+  --workdir /app \
+  --network kind \
+  --add-host harbor.localhost.com:172.18.0.50 \
+  -it gcr.io/kaniko-project/executor:debug sh
+```
+
+```sh
+/kaniko/executor --insecure --context $(pwd) --destination harbor.localhost.com/viana/demo:0.0.1 
+```
+
+
+```bash
+/kaniko/executor \
+	--destination harbor.localhost.com/viana/demo:0.1 \
+	--insecure \
+	--context $(pwd)
+```
