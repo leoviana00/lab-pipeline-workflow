@@ -71,3 +71,5 @@
 - [Share a standard Pipeline across multiple projects with Shared Libraries](https://www.jenkins.io/blog/2017/10/02/pipeline-templates-with-shared-libraries/)
 - [Extending with Shared Libraries](https://www.jenkins.io/doc/book/pipeline/shared-libraries/)
 - [SonarScanner CLI](https://docs.sonarsource.com/sonarqube-server/10.8/analyzing-source-code/scanners/sonarscanner/)
+- [Trivy](https://github.com/aquasecurity/trivy)
+- [Harbor Vulnerability Scanning](https://goharbor.io/docs/2.0.0/administration/vulnerability-scanning/)
