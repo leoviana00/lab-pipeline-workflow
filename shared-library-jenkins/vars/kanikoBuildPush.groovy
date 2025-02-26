@@ -25,6 +25,7 @@ def call (body){
                 --context $(pwd) \
                 --destination ${DESTINATION} \
                 --insecure
+            
         '''
     }
 }
