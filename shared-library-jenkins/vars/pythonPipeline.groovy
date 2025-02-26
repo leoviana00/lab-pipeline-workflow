@@ -60,6 +60,24 @@ def call (body){
                     }
                 }
             }
+
+            stage('Harbor Security Scan') {
+                environment {
+                    HARBOR_CREDENTIALS = credentials('harbor-credentials')
+                }
+                steps {
+                    harborSecurityScan{}
+                }
+                when {
+                    anyOf {
+                        branch pattern: "develop"
+                        branch pattern: "hotfix-*"
+                        branch pattern: "release-*"
+                        branch pattern: "v*"
+                    }
+                }
+            }
+            
         }
     }
 }

@@ -5,8 +5,7 @@ def call (body) {
   body()
   container('alpine') {
     sh '''
-      apk add curl jq
- 
+    
       # retry backoff parameters
       MAX_RETRY=10
       COUNT=1
@@ -32,9 +31,7 @@ def call (body) {
         SEVERITY=$(curl -X GET \
           "${HARBOR_URL}/${HARBOR_PATH}?${HARBOR_URL_PARAMS}" \
           -H "accept: application/json" \
-          -H "authorization: Basic ${HARBOR_CREDENTIALS}" \
-          | jq -r '.scan_overview | to_entries | .[].value.severity'
-        )
+          -H "authorization: Basic ${HARBOR_CREDENTIALS}" | jq -r '.scan_overview | to_entries | .[].value.severity')
  
         echo "sleep: ${SLEEP}s | count: ${COUNT}"
         sleep $SLEEP
