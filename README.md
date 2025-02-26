@@ -42,11 +42,11 @@
 - [x] Configuração de repositórios, chaves e service users no Gitea
 - [x] Instalação de plugins como código no Jenkins
 - [x] Integração entre Gitea e Jenkins usando multibranch pipelines via webhook
-- [ ] Transpondo testes unitários, lint e segurança para a pipeline
-- [ ] Migração e utilização de Shared Libraries no Jenkins para modularidade
-- [ ] Scan de código estático com report no SonarQube e bloqueio com Quality Gate
-- [ ] Build de imagens Docker usando Kaniko com push para registry interno no Harbor
-- [ ] Versionamento de artefatos seguindo o Gitflow
+- [x] Transpondo testes unitários, lint e segurança para a pipeline
+- [x] Migração e utilização de Shared Libraries no Jenkins para modularidade
+- [x] Scan de código estático com report no SonarQube e bloqueio com Quality Gate
+- [x] Build de imagens Docker usando Kaniko com push para registry interno no Harbor
+- [x] Versionamento de artefatos seguindo o Gitflow
 - [ ] Scan de segurança de imagens Docker usando scan on push do Harbor
 - [ ] Promoção de artefatos usando o Crane
 - [ ] Testes de integração com deploy no próprio cluster

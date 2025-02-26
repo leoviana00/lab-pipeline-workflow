@@ -18,6 +18,15 @@ docker inspect kind | jq -r '.[].IPAM.Config[0].Subnet'
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.3/config/manifests/metallb-native.yaml
 kubectl wait --namespace metallb-system \
 ```
+- Este comando irá instalar o MetalLB em seu cluster, no namespace metallb-system.
+
+<p align="center">
+  <img alt="CI/CD" src="../images/metallb-install.png">
+</p>
+
+
+- O MetalLB permanecerá inativo até ser configurado. Para configurar o MetalLB, você precisa definir os IPs que serão atribuídos aos serviços do Load Balancer. Aqui está um exemplo de como fazer isso:
+- Obs: Os ips definidos tem que está dentro da faixa da rede do kind identificado no passo acima.
 
 - Layer 2 Configuration
 
@@ -41,71 +50,73 @@ spec:
   - homelab-pool
 ```
 
+```bash
+kubectl apply -f manifests/metallb-pool.yaml
+```
+
+<p align="center">
+  <img alt="CI/CD" src="../images/metallb-pool.png">
+</p>
+
+
 - [Documentation - Inatallation by manifest](https://metallb.io/installation/#installation-by-manifest)
 - [Documentation - Configuration](https://metallb.io/configuration/#layer-2-configuration)
 
 ## Ingress Nginx
 
+1. Add repo `ingress`
+
 ```bash
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+```
+<p align="center">
+  <img alt="CI/CD" src="../images/add-repo-ingress.png">
+</p>
+
+2. Atualizar repo `ìngress`
+
+```bash
 helm repo update
-helm search repo neginx 
+```
+
+<p align="center">
+  <img alt="CI/CD" src="../images/update-repo-ingress.png">
+</p>
+
+
+3. Localizar o repo `ìngress`
+
+```bash
+helm search repo nginx 
+``` 
+
+<p align="center">
+  <img alt="CI/CD" src="../images/search-repo-ingress.png">
+</p>
+
+4. Checando o template do repo `ìngress` - caso queira dar uma olhada
+
+```bash
 helm template nginx ingress-nginx/ingress-nginx >test
-helm upgrade --install --namespace ingess-nginx --create-namespace -f helm-tools/ingress-nginx/values.yaml ingress-nginx ingress-nginx/ingress-nginx
 ```
 
-## Helmfile
-
-- Installation:
-
-  - [Download Helmfile](https://github.com/helmfile/helmfile/releases)
-
-- Descompactando o binário
+5. Atualizando e instalando ingress controller
 
 ```bash
-tar xvzf helmfile_0.171.0_linux_amd64.tar.gz 
+helm upgrade --install --namespace ingress-nginx --create-namespace -f helm-tools/ingress-nginx/values.yaml ingress-nginx ingress-nginx/ingress-nginx
 ```
 
-- Instalando
+<p align="center">
+  <img alt="CI/CD" src="../images/install-repo-ingress.png">
+</p>
+
+- [Values utilizado](../helm-tools/ingress-nginx/values.yaml)
+
+6. Deletando um Chart
 
 ```bash
-./helmfile 
+helm delete ingress-nginx -n ingess-nginx 
 ```
-
-- Check da versão
-
-```bash
-./helmfile version
-```
-
-- MOvendo o binário para o diretório `bin`
-
-```bash
-sudo mv -f helmfile /usr/local/bin 
-```
-
-- Checando a localização
-
-```bash
-sudo mv -f helmfile /usr/local/bin 
-```
-
-- Check versão
-
-```bash
-helmfile version   
-```
-
-- Instalação dos plugins
-
-```bash
-helm plugin add https://github.com/databus23/helm-diff
-helm plugin install https://github.com/jkroepke/helm-secrets --version v4.2.2
-helm plugin install https://github.com/aslafy-z/helm-git --version 0.14.3
-$ helm plugin install https://github.com/hypnoglow/helm-s3.git --version 0.14.0
-```
-
-- Uma outra opção : https://gist.github.com/genedy2017/142861e20a7c88b3ac7a78c86e09a5da
 
 ## Jenkins
 
@@ -118,6 +129,12 @@ $ helm plugin install https://github.com/hypnoglow/helm-s3.git --version 0.14.0
 ```bash
 kubectl get secret -n jenkins jenkins -ojson | jq -r '.data."jenkins-admin-password"' | base64 -d
 ```
+
+- Jenkins
+
+<p align="center">
+  <img alt="CI/CD" src="../images/jenkins-login.png">
+</p>
 
 ## Gitea
 
@@ -134,15 +151,32 @@ tcp:
 
 - Com isso, o Service do NGINX vai abrir a porta 22, e qualquer requisição ali, será enviado para o Service gitea-ssh na namespace gitea.
 
+- Gitea
+
+<p align="center">
+  <img alt="CI/CD" src="../images/gitea-login.png">
+</p>
+
 ## Harbor
 
 - [Repositório](https://github.com/goharbor/harbor-helm/tree/v1.16.2)
 - [Values utilizado](../helm-tools/harbor/values.yaml)
 
+- Harbor
+
+<p align="center">
+  <img alt="CI/CD" src="../images/harbor-login.png">
+</p>
+
 ## Sonarqube
 - [Repositório](https://github.com/SonarSource/helm-chart-sonarqube/tree/sonarqube-10.8.1-sonarqube-dce-10.8.1/charts/sonarqube)
 - [Values utilizado](../helm-tools/sonarqube/values.yaml)
 
+- Sonarqube
+
+<p align="center">
+  <img alt="CI/CD" src="../images/sonar-login.png">
+</p>
 
 - Sonarscanner
 
@@ -161,6 +195,20 @@ docker run \
 ## Argocd
 - [Repositório](https://github.com/argoproj/argo-helm/tree/argo-cd-7.8.2
 - [Values utilizado](../helm-tools/argocd/values.yaml)
+
+- Argo CD
+
+<p align="center">
+  <img alt="CI/CD" src="../images/argocd-login.png">
+</p>
+
+## Uptime Kuma
+
+- Uptime Kuma - Status Page
+
+<p align="center">
+  <img alt="CI/CD" src="../images/status-page-kuma.png">
+</p>
 
 
 ## Image Pull Secret Patcher
@@ -215,3 +263,57 @@ docker run --entrypoint "" \
 	--insecure \
 	--context $(pwd)
 ```
+
+
+## Helmfile
+
+- Installation:
+
+  - [Download Helmfile](https://github.com/helmfile/helmfile/releases)
+
+- Descompactando o binário
+
+```bash
+tar xvzf helmfile_0.171.0_linux_amd64.tar.gz 
+```
+
+- Instalando
+
+```bash
+./helmfile 
+```
+
+- Check da versão
+
+```bash
+./helmfile version
+```
+
+- MOvendo o binário para o diretório `bin`
+
+```bash
+sudo mv -f helmfile /usr/local/bin 
+```
+
+- Checando a localização
+
+```bash
+sudo mv -f helmfile /usr/local/bin 
+```
+
+- Check versão
+
+```bash
+helmfile version   
+```
+
+- Instalação dos plugins
+
+```bash
+helm plugin add https://github.com/databus23/helm-diff
+helm plugin install https://github.com/jkroepke/helm-secrets --version v4.2.2
+helm plugin install https://github.com/aslafy-z/helm-git --version 0.14.3
+$ helm plugin install https://github.com/hypnoglow/helm-s3.git --version 0.14.0
+```
+
+- Uma outra opção : https://gist.github.com/genedy2017/142861e20a7c88b3ac7a78c86e09a5da
