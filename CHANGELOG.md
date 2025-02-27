@@ -2,6 +2,7 @@
 
 ## Current - Work in progress
 ### Merges
+*  Merge pull request #27 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ea27ca59147d87a24e6b1cb08ae3374f7df3231a)
 *  Merge pull request #26 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6cf77f30f086d5e7af589802f0604ae52d49863c)
 *  Merge pull request #25 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/0ff10326ad174bbd279791ff20b6d79744341f45)
 *  Merge pull request #24 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/83fb568a3641ac92af4b6c58505595d18d657e40)
@@ -37,6 +38,8 @@
 *  feat(auto): ajustando alguns steps no makefile [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/06855f24f84402937b4fe237a2e8ada15e90e822)
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/5d97f52945f0e05d9b4947aa00329242c29d2571)
 *  socs(issues): ajuste no template de issues [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/2bede7d266453de3951f00627c48e1da5a594374)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/bed980f54ca1425ef5a288cef937d4cefa3e2e9c)
+*  feat(issues): no blank issues [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/9e6be50b82fd829a7b8bbf638c570de4f24347f5)
 
 
 
