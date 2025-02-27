@@ -2,6 +2,7 @@
 
 ## Current - Work in progress
 ### Merges
+*  Merge pull request #25 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/0ff10326ad174bbd279791ff20b6d79744341f45)
 *  Merge pull request #24 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/83fb568a3641ac92af4b6c58505595d18d657e40)
 *  Merge pull request #23 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/40bb254551000cbf930b7e6c3bb82db6fb660292)
 *  Merge pull request #22 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/81265a5f9e994342b7fa57ea1ea57aa7793abc46)
@@ -31,6 +32,8 @@
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/24f1df50890da0bcb772d711d354019f1a1a7898)
 *  feat(po): jenkins pod tools [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b8c59d8838faf31becaef9291e49589a9813cc98)
 *  feat(stages): stages shared library [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/c38b4874c1aa32bfcbd751b42cf2990dae26b7fa)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/0f5e1abe976e5a8b7c7a7af71c5d6e6db061caa5)
+*  feat(auto): ajustando alguns steps no makefile [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/06855f24f84402937b4fe237a2e8ada15e90e822)
 
 
 
