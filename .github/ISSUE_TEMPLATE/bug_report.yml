@@ -1,0 +1,87 @@
+name: "🐛 Bug Report"
+description: Create a new ticket for a bug.
+title: "🐛 [BUG] - <title>"
+labels: ["bug"]
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Descrição"
+      description: Insira uma descrição explícita do seu problema
+      placeholder: Descrição curta e explícita do seu incidente...
+    validations:
+      required: true
+  - type: input
+    id: reprod-url
+    attributes:
+      label: "URL de reprodução"
+      description: Insira seu URL do GitHub para fornecer uma reprodução do problema
+      placeholder: ex. https://github.com/USERNAME/REPO-NAME
+    validations:
+      required: true
+  - type: textarea
+    id: reprod
+    attributes:
+      label: "Etapas de reprodução"
+      description: Insira uma descrição explícita do seu problema
+      value: |
+        1. Vá para '....'
+        2. Clique em '....'
+        3. Role para baixo até '....'
+        4. Veja o erro
+      render: bash
+    validations:
+      required: true
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "Capturas de tela"
+      description: Se aplicável, adicione capturas de tela para ajudar a explicar seu problema.
+      placeholder: Adicione a captura de tela...
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs"
+      description: Copie e cole qualquer saída de log relevante. Isso será formatado automaticamente em código, portanto, não há necessidade de crases.
+      render: bash
+    validations:
+      required: false
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: "Browsers"
+      description: Em quais navegadores você está vendo o problema?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - Opera
+        - N/A
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: "OS"
+      description: Qual é o ambiente impactado?
+      multiple: true
+      options:
+        - Windows
+        - Linux
+        - Mac
+    validations:
+      required: false
+  - type: dropdown
+    id: trabalhar
+    attributes:
+      label: "Trabalhar"
+      description: Você tem interesse em trabalhar nisso?
+      multiple: true
+      options:
+        - Sim
+        - Não
