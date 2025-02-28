@@ -47,7 +47,7 @@
 - [x] Scan de código estático com report no SonarQube e bloqueio com Quality Gate
 - [x] Build de imagens Docker usando Kaniko com push para registry interno no Harbor
 - [x] Versionamento de artefatos seguindo o Gitflow
-- [ ] Scan de segurança de imagens Docker usando scan on push do Harbor
+- [x] Scan de segurança de imagens Docker usando scan on push do Harbor
 - [ ] Promoção de artefatos usando o Crane
 - [ ] Testes de integração com deploy no próprio cluster
 - [ ] Deploy utilizando o princípio de GitOps via ArgoCD
@@ -73,3 +73,4 @@
 - [SonarScanner CLI](https://docs.sonarsource.com/sonarqube-server/10.8/analyzing-source-code/scanners/sonarscanner/)
 - [Trivy](https://github.com/aquasecurity/trivy)
 - [Harbor Vulnerability Scanning](https://goharbor.io/docs/2.0.0/administration/vulnerability-scanning/)
+- [Crane](https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane.md)
