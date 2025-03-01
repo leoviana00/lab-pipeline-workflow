@@ -3,6 +3,7 @@ kind: Pod
 metadata:
   namespace: jenkins
 spec:
+  serviceAccountName: jenkins-ci
   containers:
     # UNIT TESTS
     - name: python
@@ -32,6 +33,8 @@ spec:
       volumeMounts:
         - name: harbor-credentials
           mountPath: /kaniko/.docker
+        - name: jenkins-artifacts
+          mountPath: /artifacts
     # SCAN
     - name: alpine
       image: dwdraju/alpine-curl-jq
@@ -42,6 +45,32 @@ spec:
         - infinity
       securityContext:
         runAsUser: 1000
+      volumeMounts:
+        - name: jenkins-artifacts
+          mountPath: /artifacts
+    # PROMOCAO ARTEFATOS
+    - name: crane
+      image: gcr.io/go-containerregistry/crane:debug
+      command:
+        - sleep
+      args:
+        - infinity
+      volumeMounts:
+        - name: harbor-credentials
+          mountPath: /root/.docker/config.json
+          subPath: config.json
+        - name: jenkins-artifacts
+          mountPath: /artifacts
+    # HELM
+    - name: helm
+      image: alpine/helm:3.15.1
+      command:
+        - sleep
+      args:
+        - infinity
+      volumeMounts:
+        - name: jenkins-artifacts
+          mountPath: /artifacts
   hostAliases:
     - ip: "172.18.0.50"
       hostnames:
@@ -55,3 +84,6 @@ spec:
         items:
           - key: .dockerconfigjson
             path: config.json
+    - name: jenkins-artifacts
+      persistentVolumeClaim:
+        claimName: jenkins-artifacts

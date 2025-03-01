@@ -10,13 +10,14 @@ def call (body){
             IMAGE_TAG=""
             REGISTRY="harbor.localhost.com/viana"
             REPOSITORY=${JOB_NAME%/*}
+            ENVIRONMENT=""
 
             if [ $(echo $GIT_BRANCH | grep ^develop$) ]; then
                 IMAGE_TAG="dev-${GIT_COMMIT:0:10}"
-            elif [ $(echo $GIT_BRANCH | grep -E "^(release-.*)|(hotfix-.*)") ]; then
+                ENVIRONMENT="dev"
+            elif [ $(echo $GIT_BRANCH | grep -E "^hotfix-.*") ]; then
                 IMAGE_TAG="${GIT_BRANCH#*-}-${GIT_COMMIT:0:10}"
-            elif [ $(echo $GIT_BRANCH | grep -E "^v[0-9]\\.[0-9]\\.[0-9]$") ]; then
-                IMAGE_TAG="${GIT_BRANCH}"
+                ENVIRONMENT="stg"
             fi
             
             DESTINATION=${REGISTRY}/${REPOSITORY}:${IMAGE_TAG}
@@ -25,6 +26,8 @@ def call (body){
                 --context $(pwd) \
                 --destination ${DESTINATION} \
                 --insecure
+            
+            echo "${IMAGE_TAG}" > /artifacts/${ENVIRONMENT}.artifact
             
         '''
     }

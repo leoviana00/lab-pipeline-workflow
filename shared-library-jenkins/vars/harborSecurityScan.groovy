@@ -11,16 +11,17 @@ def call (body) {
       COUNT=1
       SLEEP=1
       SEVERITY="null"
+
       # extract tag name
-      TAG=""
- 
+      ENVIRONMENT=""
+
       if [ $(echo $GIT_BRANCH | grep ^develop$) ]; then
-        TAG="dev-${GIT_COMMIT:0:10}"
-      elif [ $(echo $GIT_BRANCH | grep -E "^(release-.*)|(hotfix-.*)") ]; then
-        TAG="${GIT_BRANCH#*-}-${GIT_COMMIT:0:10}"
-      elif [ $(echo $GIT_BRANCH | grep -E "v[0-9]\\.[0-9]{1,2}\\.[0-9]{1,3}$") ]; then
-        TAG="${GIT_BRANCH}"
+        ENVIRONMENT="dev"
+      elif [ $(echo $GIT_BRANCH | grep -E "^hotfix-.*") ]; then
+        ENVIRONMENT="stg"
       fi
+
+      TAG="$(cat /artifacts/${ENVIRONMENT}.artifact)"
  
       # harbor variables
       HARBOR_URL="http://harbor.localhost.com"
