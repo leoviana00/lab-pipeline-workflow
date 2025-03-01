@@ -48,8 +48,16 @@
 - [x] Build de imagens Docker usando Kaniko com push para registry interno no Harbor
 - [x] Versionamento de artefatos seguindo o Gitflow
 - [x] Scan de segurança de imagens Docker usando scan on push do Harbor
-- [ ] Promoção de artefatos usando o Crane
-- [ ] Testes de integração com deploy no próprio cluster
+- [x] Promoção de artefatos usando o Crane
+- [x] Testes de integração com deploy no próprio cluster
+
+> [!IMPORTANT]  
+> OBS: Etapa base da esteira de CI finalizada, porém está sujeita a vários pontos de melhorias, alguns exemplos são:
+> Tira nome da aplicação na pipeline e mudar para variável
+> Remover senhas do charts e trabalhar com cofre de senha
+> Melhorar a estrutra de charts deixando mais genéricas
+> Tratar a trabalhar as notificações 
+
 - [ ] Deploy utilizando o princípio de GitOps via ArgoCD
 - [ ] Separação de Deploy em Dev, Staging e Produção via regras de branches
 - [ ] Notificação da pipeline [Serviço de notificação a definir ainda]
