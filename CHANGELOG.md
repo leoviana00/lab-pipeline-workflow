@@ -2,8 +2,10 @@
 
 ## Current - Work in progress
 ### Merges
-
+*  Merge pull request #34 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/5678a44506f03e85c3f2ea6c48e51b4a8fb5f602)
 ### Commits
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/70110cf14beadd836989700c0819198cb46cfdf2)
+*  docs(readme): update roadmap readme [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/9298d8e4569a1f1f4132c56d83e1488dcea1eb07)
 
 
 
