@@ -2,6 +2,9 @@
 
 ## Current - Work in progress
 ### Merges
+*  Merge pull request #31 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/2dc152c9bd026ed64c1703915a52e9ec76116882)
+*  Merge branch 'main' into feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/cbf836f13e3f44438a4f400adfffc5c84709d21b)
+*  Merge pull request #30 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/898339c76b6107661a987e3236c4bc6fff344ade)
 *  Merge pull request #27 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ea27ca59147d87a24e6b1cb08ae3374f7df3231a)
 *  Merge pull request #26 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6cf77f30f086d5e7af589802f0604ae52d49863c)
 *  Merge pull request #25 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/0ff10326ad174bbd279791ff20b6d79744341f45)
@@ -40,6 +43,21 @@
 *  socs(issues): ajuste no template de issues [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/2bede7d266453de3951f00627c48e1da5a594374)
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/bed980f54ca1425ef5a288cef937d4cefa3e2e9c)
 *  feat(issues): no blank issues [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/9e6be50b82fd829a7b8bbf638c570de4f24347f5)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/5479c3156fe105da82c833cd4f04b9a93c35948b)
+*  feat(artifact): creat pvc for artifacts [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/8c423c5215900a746a2ce780171ae7f6e487d62e)
+*  docs(project): atualizando steps na doc [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/df800b00abb906683450c4fb8746881cadf94393)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/a1ae4d6826dcd6c8f8ce72bcdcb12b5f06e520b7)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/af45fa7d3aad432d80d339de7cbbb46bdeff7991)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/e912c95d65eaea5ee6ef8d72d73b7fbed146124a)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/9ea50ceb159b8b44a5cf17d4e412562c3f016bc7)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b3d407b0c39e4eca0c01ba20aa7ac2f4d333022a)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/20f13dbd78b6c78bf13993f4f9bfa54e82661ba5)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/a5f694be7100e580024b1984a91772caa105f6f0)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/8c0fc1c2ba7ea0ca63f36516fd5bfda8c9012dd9)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/8f552dff9a86325b3cccab9efa6cbfd15ef0ef09)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/0ed31c2a277ca806d9d3f6867340f3325e7f76c7)
+*  feat(ci): credentials harbor and rbac jenkins [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/e4ce41e5f264d7dd79f982cfbb8504c7db9a1c41)
+*  feat(app): helm applications [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ad31a9fb9a891d998cf2c9e8526e5c9d935f5c26)
 
 
 
