@@ -12,7 +12,9 @@ pre:
 
 helm:
 	@helmfile apply
-	@kubectl apply -f manifests/harbor-credentials.yaml
+	@kubectl apply -f manifests/harbor-credentials-jenkins.yaml
+	@kubectl apply -f manifests/harbor-credentials-secretspatcher.yaml
+	@kubectl apply -f manifests/jenkins-rbac.yaml
 
 create:
 	@kind create cluster --name kind-workflow-pipe --config config.yaml  
