@@ -11,6 +11,7 @@ def call (body){
                 yamlFile 'jenkinsPod.yaml'
             }
         }
+        
         stages {
             stage('Unit Tests') {
                 steps {
@@ -55,8 +56,6 @@ def call (body){
                     anyOf {
                         branch pattern: "develop"
                         branch pattern: "hotfix-*"
-                        branch pattern: "release-*"
-                        branch pattern: "v*"
                     }
                 }
             }
@@ -72,12 +71,46 @@ def call (body){
                     anyOf {
                         branch pattern: "develop"
                         branch pattern: "hotfix-*"
+                    }
+                }
+            }
+
+            stage('Crane Artifact Promotion') {
+                steps {
+                    artifactPromotionCrane{}
+                }
+                when {
+                    anyOf {
                         branch pattern: "release-*"
                         branch pattern: "v*"
                     }
                 }
             }
+
+            stage('Infrastructure Tests on K8s') {
+                environment {
+                    JENKINS_SSH_PRIVATE_KEY = credentials('giteaCredentials')
+                }
+                steps {
+                    infraTestK8s{}
+                }
+                when {
+                    anyOf {
+                        branch pattern: "develop"
+                        branch pattern: "hotfix-*"
+                    }
+                }
+            }
             
+        }
+        post {
+            always {
+                container('helm'){
+                    sh '''
+                        helm delete -n citest flask-ci
+                    '''
+                }
+            }
         }
     }
 }
