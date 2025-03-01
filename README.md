@@ -53,10 +53,10 @@
 
 > [!IMPORTANT]  
 > OBS: Etapa base da esteira de CI finalizada, porém está sujeita a vários pontos de melhorias, alguns exemplos são:
-> Tira nome da aplicação na pipeline e mudar para variável
-> Remover senhas do charts e trabalhar com cofre de senha
-> Melhorar a estrutra de charts deixando mais genéricas
-> Tratar a trabalhar as notificações 
+> Tirar o nome da aplicação na pipeline e mudar para variável;
+> Remover senhas do charts e trabalhar com cofre de senha;
+> Melhorar a estrutra de charts deixando mais genéricas;
+> Tratar e trabalhar melhor as notificações;
 
 - [ ] Deploy utilizando o princípio de GitOps via ArgoCD
 - [ ] Separação de Deploy em Dev, Staging e Produção via regras de branches
