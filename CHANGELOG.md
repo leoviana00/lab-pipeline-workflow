@@ -2,6 +2,7 @@
 
 ## Current - Work in progress
 ### Merges
+*  Merge pull request #32 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ed6b51ecc6a99e0bf409e8e7b94cc4881235a14c)
 *  Merge pull request #31 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/2dc152c9bd026ed64c1703915a52e9ec76116882)
 *  Merge branch 'main' into feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/cbf836f13e3f44438a4f400adfffc5c84709d21b)
 *  Merge pull request #30 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/898339c76b6107661a987e3236c4bc6fff344ade)
@@ -58,6 +59,8 @@
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/0ed31c2a277ca806d9d3f6867340f3325e7f76c7)
 *  feat(ci): credentials harbor and rbac jenkins [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/e4ce41e5f264d7dd79f982cfbb8504c7db9a1c41)
 *  feat(app): helm applications [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ad31a9fb9a891d998cf2c9e8526e5c9d935f5c26)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/aae0fb4b1f067ed7589ae95dbf1a67dfdff2981a)
+*  feat(stages): artifacts promotional - build and push - harbor scan - infra test [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/86f168f4bb3d0f39042952ad9e16736dd9b312d6)
 
 
 
