@@ -2,6 +2,14 @@
 
 ## Current - Work in progress
 ### Merges
+
+### Commits
+
+
+
+## 3.0.0 - (2025-02-20)
+### Merges
+*  Merge pull request #33 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/e828a183aa8ae9bc9a57b53d2e2d5c210102e0ab)
 *  Merge pull request #32 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ed6b51ecc6a99e0bf409e8e7b94cc4881235a14c)
 *  Merge pull request #31 from leoviana00/feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/2dc152c9bd026ed64c1703915a52e9ec76116882)
 *  Merge branch 'main' into feature/setup/ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/cbf836f13e3f44438a4f400adfffc5c84709d21b)
@@ -61,6 +69,8 @@
 *  feat(app): helm applications [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ad31a9fb9a891d998cf2c9e8526e5c9d935f5c26)
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/aae0fb4b1f067ed7589ae95dbf1a67dfdff2981a)
 *  feat(stages): artifacts promotional - build and push - harbor scan - infra test [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/86f168f4bb3d0f39042952ad9e16736dd9b312d6)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/d181afee72e29a60219b036c5a9040f8336ff356)
+*  docs(tag): finalizando base da pipeline ci [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b8438b2df7c53f0907b813ac8a23de0990ed8a76)
 
 
 
@@ -154,11 +164,11 @@
 *  docs(changelog): add changelog ao projeto [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6930dfb71846b1d7507cdba5befe6d924b23d568)
 ## 📝 Metadata
 ```
-This version -------- 2.0.0
+This version -------- 3.0.0
+2.0.0
 1.0.0
 0.2.0
 0.1.0
-0.0.0
-Previous version ---- 1.0.0
-Total commits ------- 58
+Previous version ---- 2.0.0
+Total commits ------- 115
 ```
