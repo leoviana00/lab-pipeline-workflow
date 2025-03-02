@@ -63,6 +63,7 @@
 - [ ] Notificação da pipeline [Serviço de notificação a definir ainda]
 
 ## Referências
+
 - [Kubernetes Kind](https://kind.sigs.k8s.io/)
 - [Metallb](https://metallb.io/)
 - [Descubra como o MetalLB aprimora o balanceamento de carga em ambientes Kubernetes on-premises](https://blog.4linux.com.br/instalando-e-configurando-o-metallb-em-um-ambiente-on-premises/)
