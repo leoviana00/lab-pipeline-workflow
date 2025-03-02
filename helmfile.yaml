@@ -1,82 +1,81 @@
 repositories:
- - name: ingress-nginx
-   url: https://kubernetes.github.io/ingress-nginx  
- - name: jenkins
-   url: https://charts.jenkins.io
- - name: gitea
-   url: https://dl.gitea.com/charts/
- - name: harbor
-   url: https://helm.goharbor.io
- - name: sonarqube
-   url: https://SonarSource.github.io/helm-chart-sonarqube
- - name: argo
-   url: https://argoproj.github.io/argo-helm
- - name: empathyco
-   url: https://empathyco.github.io/helm-charts/
- - name: uptime-kuma
-   url: https://helm.irsigler.cloud
+  - name: ingress-nginx
+    url: https://kubernetes.github.io/ingress-nginx
+  - name: jenkins
+    url: https://charts.jenkins.io
+  - name: gitea
+    url: https://dl.gitea.com/charts/
+  - name: harbor
+    url: https://helm.goharbor.io
+  - name: sonarqube
+    url: https://SonarSource.github.io/helm-chart-sonarqube
+  - name: argo
+    url: https://argoproj.github.io/argo-helm
+  - name: empathyco
+    url: https://empathyco.github.io/helm-charts/
+  - name: uptime-kuma
+    url: https://helm.irsigler.cloud
 releases:
+  - name: ingress-nginx
+    namespace: ingress-nginx
+    createNamespace: true
+    chart: ingress-nginx/ingress-nginx
+    version: 4.12.0
+    values:
+      - repo-helm-cluster-tools/ingress-nginx/values.yaml
 
-- name: ingress-nginx
-  namespace: ingress-nginx
-  createNamespace: true
-  chart: ingress-nginx/ingress-nginx
-  version: 4.12.0
-  values:
-    - helm-tools/ingress-nginx/values.yaml
+  - name: jenkins
+    namespace: jenkins
+    createNamespace: true
+    chart: jenkins/jenkins
+    version: 5.8.12
+    values:
+      - repo-helm-cluster-tools/jenkins/values.yaml
 
-- name: jenkins
-  namespace: jenkins
-  createNamespace: true
-  chart: jenkins/jenkins
-  version: 5.8.12
-  values:
-    - helm-tools/jenkins/values.yaml
+  - name: gitea
+    namespace: gitea
+    createNamespace: true
+    chart: gitea/gitea
+    version: 10.5.0
+    values:
+      - repo-helm-cluster-tools/gitea/values.yaml
 
-- name: gitea
-  namespace: gitea
-  createNamespace: true
-  chart: gitea/gitea
-  version: 10.5.0
-  values:
-    - helm-tools/gitea/values.yaml
+  - name: harbor
+    namespace: harbor
+    createNamespace: true
+    chart: harbor/harbor
+    version: 1.16.2
+    values:
+      - repo-helm-cluster-tools/harbor/values.yaml
 
-- name: harbor
-  namespace: harbor
-  createNamespace: true
-  chart: harbor/harbor
-  version: 1.16.2
-  values:
-    - helm-tools/harbor/values.yaml
+  - name: sonarqube
+    namespace: sonarqube
+    createNamespace: true
+    chart: sonarqube/sonarqube
+    version: 10.8.1
+    values:
+      - repo-helm-cluster-tools/sonarqube/values.yaml
 
-- name: sonarqube
-  namespace: sonarqube
-  createNamespace: true
-  chart: sonarqube/sonarqube
-  version: 10.8.1
-  values:
-    - helm-tools/sonarqube/values.yaml
+  - name: argo
+    namespace: argocd
+    createNamespace: true
+    chart: argo/argo-cd
+    version: 7.8.2
+    values:
+      - repo-helm-cluster-tools/argocd/values.yaml
 
-- name: argo
-  namespace: argocd
-  createNamespace: true
-  chart: argo/argo-cd
-  version: 7.8.2
-  values:
-    - helm-tools/argocd/values.yaml
+  - name: imagepullsecret-patcher
+    namespace: imagepullsecret-patcher
+    createNamespace: true
+    chart: empathyco/imagepullsecret-patcher
+    version: 1.0.0
+    values:
+      - repo-helm-cluster-tools/imagepullsecret-patcher/values.yaml
 
-- name: imagepullsecret-patcher
-  namespace: imagepullsecret-patcher
-  createNamespace: true
-  chart: empathyco/imagepullsecret-patcher
-  version: 1.0.0
-  values:
-    - helm-tools/imagepullsecret-patcher/values.yaml
-
-- name: uptime-kuma
-  namespace: uptime-kuma
-  createNamespace: true
-  chart: uptime-kuma/uptime-kuma
-  version: 2.21.2
-  values:
-    - helm-tools/uptime-kuma/values.yaml
+  - name: uptime-kuma
+    namespace: uptime-kuma
+    createNamespace: true
+    chart: uptime-kuma/uptime-kuma
+    version: 2.21.2
+    values:
+      - repo-helm-cluster-tools/uptime-kuma/values.yaml
