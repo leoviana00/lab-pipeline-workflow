@@ -1,0 +1,89 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  namespace: jenkins
+spec:
+  serviceAccountName: jenkins-ci
+  containers:
+    # UNIT TESTS
+    - name: python
+      image: python:3.9.12-alpine3.15
+      command:
+        - sleep
+      args:
+        - infinity
+      securityContext:
+        runAsUser: 1000
+    # SONARQUBE
+    - name: sonar-scanner-cli
+      image: sonarsource/sonar-scanner-cli:11.2
+      command:
+        - sleep
+      args:
+        - infinity
+      securityContext:
+        runAsUser: 1000
+    # KANIKO
+    - name: kaniko
+      image: gcr.io/kaniko-project/executor:debug
+      command:
+        - sleep
+      args:
+        - infinity
+      volumeMounts:
+        - name: harbor-credentials
+          mountPath: /kaniko/.docker
+        - name: jenkins-artifacts
+          mountPath: /artifacts
+    # SCAN
+    - name: alpine
+      image: dwdraju/alpine-curl-jq
+      # image: alpine:3.18
+      command:
+        - sleep
+      args:
+        - infinity
+      securityContext:
+        runAsUser: 1000
+      volumeMounts:
+        - name: jenkins-artifacts
+          mountPath: /artifacts
+    # PROMOCAO ARTEFATOS
+    - name: crane
+      image: gcr.io/go-containerregistry/crane:debug
+      command:
+        - sleep
+      args:
+        - infinity
+      volumeMounts:
+        - name: harbor-credentials
+          mountPath: /root/.docker/config.json
+          subPath: config.json
+        - name: jenkins-artifacts
+          mountPath: /artifacts
+    # HELM
+    - name: helm
+      image: alpine/helm:3.15.1
+      command:
+        - sleep
+      args:
+        - infinity
+      volumeMounts:
+        - name: jenkins-artifacts
+          mountPath: /artifacts
+  hostAliases:
+    - ip: "172.18.0.50"
+      hostnames:
+        - "gitea.localhost.com"
+        - "sonarqube.localhost.com"
+        - "harbor.localhost.com"
+  volumes:
+    - name: harbor-credentials
+      secret:
+        secretName: harbor-credentials
+        items:
+          - key: .dockerconfigjson
+            path: config.json
+    - name: jenkins-artifacts
+      persistentVolumeClaim:
+        claimName: jenkins-artifacts
