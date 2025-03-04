@@ -101,8 +101,69 @@ def call (body){
                     }
                 }
             }
+
+            stage('Deploy to Development') {
+                environment {
+                    JENKINS_SSH_PRIVATE_KEY = credentials('giteaCredentials')
+                }
+                steps {
+                    deployDev{}
+                }
+                when {
+                    anyOf {
+                        branch pattern: "develop"
+                    }
+                }
+            }
+
+            stage('Deploy to Staging') {
+                environment {
+                    JENKINS_SSH_PRIVATE_KEY = credentials('giteaCredentials')
+                }
+                steps {
+                    deployStg{}
+                }
+                when {
+                    anyOf {
+                        branch pattern: "release-*"
+                        branch pattern: "hotfix-*"
+                    }
+                }
+            }
+
+            stage('Create Tag?') {
+                environment {
+                    JENKINS_SSH_PRIVATE_KEY = credentials('giteaCredentials')
+                }
+                steps {
+                    input message: "Would you like to promote to production?"
+                    createTag {}
+                }
+                when {
+                    anyOf {
+                        branch pattern: "release-*"
+                        branch pattern: "hotfix-*"
+                    }
+                }
+            }
+
+            stage('Deploy to Production') {
+                environment {
+                    JENKINS_SSH_PRIVATE_KEY = credentials('giteaCredentials')
+                }
+                steps {
+                    input message: "Deploy to Production?"
+                    deployPro {}
+                }
+                when {
+                    anyOf {
+                        branch pattern: "v*"
+                    }
+                }
+            }
             
         }
+
         post {
             always {
                 container('helm'){

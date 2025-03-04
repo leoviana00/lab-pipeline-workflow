@@ -4,7 +4,7 @@ appPort: 5000
 
 image:
   registry: harbor.localhost.com/viana/restapi-flask-demo
-  tag: dev-454f6f979b
+  tag: v0.0.5-454f6f979b
 
 environmentVariables:
   - name: MONGODB_DB

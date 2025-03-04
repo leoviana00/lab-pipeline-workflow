@@ -6,6 +6,8 @@ def call (body) {
   container('alpine') {
     sh '''
     
+      apk add curl jq
+      
       # retry backoff parameters
       MAX_RETRY=10
       COUNT=1
