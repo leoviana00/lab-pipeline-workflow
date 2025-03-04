@@ -37,14 +37,12 @@ spec:
           mountPath: /artifacts
     # SCAN
     - name: alpine
-      image: dwdraju/alpine-curl-jq
-      # image: alpine:3.18
+      # image: dwdraju/alpine-curl-jq
+      image: alpine:3.18
       command:
         - sleep
       args:
         - infinity
-      securityContext:
-        runAsUser: 1000
       volumeMounts:
         - name: jenkins-artifacts
           mountPath: /artifacts
