@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: restapi-flask-demo-dev
+  name: restapi-flask-demo
   namespace: argocd
 spec:
   syncPolicy:
