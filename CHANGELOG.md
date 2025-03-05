@@ -2,6 +2,7 @@
 
 ## Current - Work in progress
 ### Merges
+*  Merge pull request #41 from leoviana00/docs/project [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/ffc6a23165aba40b603612ddd11b4cea6770e08f)
 *  Merge pull request #39 from leoviana00/docs/project [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/cdcb051373d1615c61729558e97ee0d5226e5670)
 *  Merge pull request #38 from leoviana00/docs/project [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6f2a539be1954666e809a9277ee1e9cd3a8d537f)
 *  Merge pull request #37 from leoviana00/docs/project [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/30a95b5b2d6b2cd45a90e14d82ef9a258748eb61)
@@ -23,6 +24,11 @@
 *  feat(helm): helm application [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b0dd4e06727412b434647becc8c9326a5ba1753b)
 *  feat(pipeline): shared library jenkins [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b17b127915fbac7481f53def5d0f65e77b27ae70)
 *  feat(pipeline): jenkins pod [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/2d612af2ed9f2888649874cc6b415b2c6c3a1505)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/1f91071264e9732fa28c6418db4aed2dbb137ac3)
+*  feat(notify): stage notify pipeline [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/2fdf1b5f34004fa31afd78f4180f825aa62828cb)
+*  fix(application): correcao application argocd name [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/f401715a45543b5525bd1154e0731fceb46bd7a9)
+*  docs(project): add images [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/8eb8dafa053e437ac3f628c245987690b087972a)
+*  docs(project): update roadmap [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/61381dba86df196486264bddc2a273aca080f78e)
 
 
 
