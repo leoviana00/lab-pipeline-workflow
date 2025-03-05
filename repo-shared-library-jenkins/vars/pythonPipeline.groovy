@@ -11,6 +11,10 @@ def call (body){
                 yamlFile 'jenkinsPod.yaml'
             }
         }
+
+        environment {
+            DISCORD_WEBHOOK = credentials('discord-webhook')
+        }
         
         stages {
             stage('Unit Tests') {
@@ -100,6 +104,16 @@ def call (body){
                         branch pattern: "hotfix-*"
                     }
                 }
+
+                post {
+                    always {
+                        container('helm'){
+                            sh '''
+                                helm delete -n citest flask-ci
+                            '''
+                        }
+                    }
+                }
             }
 
             stage('Deploy to Development') {
@@ -161,16 +175,17 @@ def call (body){
                     }
                 }
             }
-            
         }
 
         post {
             always {
-                container('helm'){
-                    sh '''
-                        helm delete -n citest flask-ci
-                    '''
-                }
+                discordSend description: "Jenkins Pipeline Build",
+                    footer: "${JOB_BASE_NAME} (build #${BUILD_NUMBER})",
+                    link: "${BUILD_URL}",
+                    result: currentBuild.currentResult,
+                    title: "${JOB_NAME}",
+                    webhookURL: "${DISCORD_WEBHOOK}",
+                    thumbnail: "https://www.errietta.me/blog/wp-content/uploads/2019/08/256.png"
             }
         }
     }
