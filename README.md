@@ -58,9 +58,9 @@
 > Melhorar a estrutra de charts deixando mais genéricas;
 > Tratar e trabalhar melhor as notificações;
 
-- [ ] Deploy utilizando o princípio de GitOps via ArgoCD
-- [ ] Separação de Deploy em Dev, Staging e Produção via regras de branches
-- [ ] Notificação da pipeline [Serviço de notificação a definir ainda]
+- [x] Deploy utilizando o princípio de GitOps via ArgoCD
+- [x] Separação de Deploy em Dev, Staging e Produção via regras de branches
+- [x] Notificação da pipeline [Serviço de notificação a definir ainda]
 
 ## Referências
 
@@ -83,3 +83,4 @@
 - [Trivy](https://github.com/aquasecurity/trivy)
 - [Harbor Vulnerability Scanning](https://goharbor.io/docs/2.0.0/administration/vulnerability-scanning/)
 - [Crane](https://github.com/google/go-containerregistry/blob/main/cmd/crane/doc/crane.md)
+- [Argocd - Installation](https://argo-cd.readthedocs.io/en/stable/cli_installation/)
