@@ -2,6 +2,14 @@
 
 ## Current - Work in progress
 ### Merges
+
+### Commits
+
+
+
+## 3.1.0 - (2025-03-01)
+### Merges
+*  Merge pull request #45 from leoviana00/docs/project [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/06c215355bc1b5fcffd8f59307fb7dce8ec31461)
 *  Merge pull request #44 from leoviana00/docs/project [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/c367052f208c99309cdd07568434ed21c82a4d3e)
 *  Merge pull request #43 from leoviana00/docs/project [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/9adc93b86f47b9b716b3702fc3bfe520be93d2b2)
 *  Merge pull request #42 from leoviana00/docs/project [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/7b7bcc2fb9b15273192583ab4718de33b29fa5f6)
@@ -38,6 +46,8 @@
 *  docs(project): Update readme arquitetura [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/b183bdbbda7d2acb149c53bc5d1a9ca5e38bde79)
 *  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/3db4a7468729ed94ec782f938ed90313032ffa84)
 *  docs(project): update doc project [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6317d76283d79435d611183a3e2d386ab5f434a8)
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/633ca02199bd50504a700465e3f688e28453887e)
+*  docs(tag): finalização da estapa de esteira e publicação [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/0c228efa59d8b225b9691132c4db6983e3a02170)
 
 
 
@@ -198,11 +208,11 @@
 *  docs(changelog): add changelog ao projeto [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/6930dfb71846b1d7507cdba5befe6d924b23d568)
 ## 📝 Metadata
 ```
-This version -------- 3.0.0
+This version -------- 3.1.0
+3.0.0
 2.0.0
 1.0.0
 0.2.0
-0.1.0
-Previous version ---- 2.0.0
-Total commits ------- 115
+Previous version ---- 3.0.0
+Total commits ------- 139
 ```
