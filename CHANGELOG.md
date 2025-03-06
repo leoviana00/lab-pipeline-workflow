@@ -2,8 +2,10 @@
 
 ## Current - Work in progress
 ### Merges
-
+*  Merge pull request #46 from leoviana00/feature-monitoring [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/9849553899b6eb27d7863d1e6d5db4bc901dd589)
 ### Commits
+*  docs(📚 CHANGELOG): update release notes [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/debe152e5365818662651fba2c9d6654a08c7253)
+*  docs(project): update readme diagram [View](https://github.com/leoviana00/lab-pipeline-workflow/commits/d11b8e0f038f1b1deb4300b39a2ac2be0e494037)
 
 
 
