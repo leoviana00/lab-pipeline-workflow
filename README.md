@@ -8,18 +8,25 @@
 <p align="center">
   <a href="#projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#arquitetura">Arquitetura</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#roadmap">Roadmap</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#referências">Referências</a>
 </p>
 
 <p align="center">
-  <img alt="CI/CD" src="images/cicd-kubernetes.svg">
+  <img alt="CI/CD" src="images/stages.svg">
 </p>
-
 
 ## Projeto
 
 - Subir uma infraestrutura robusta 100% em Kubernetes, testando algumas tecnologias e a integração entre elas assim como também entender quais problemas resolvem. 
+
+- Visão Geral:
+
+<p align="center">
+  <img alt="CI/CD" src="images/pipeline.svg">
+</p>
+
 
 ## Tecnologias
 
@@ -33,6 +40,15 @@
 - Gitea
 - ArgoCD
 - Kaniko
+
+## Arquitetura
+
+- Diagrama arquitetural
+
+<p align="center">
+  <img alt="CI/CD" src="images/cicd-kubernetes.svg">
+</p>
+
 
 ## Roadmap
 
@@ -61,6 +77,8 @@
 - [x] Deploy utilizando o princípio de GitOps via ArgoCD
 - [x] Separação de Deploy em Dev, Staging e Produção via regras de branches
 - [x] Notificação da pipeline [Serviço de notificação a definir ainda]
+- [x] Status page para as ferramentas
+- [x] Monitoramento do Cluster e serviços
 
 ## Referências
 
