@@ -15,6 +15,11 @@ repositories:
     url: https://empathyco.github.io/helm-charts/
   - name: uptime-kuma
     url: https://helm.irsigler.cloud
+  - name: prometheus-community
+    url: https://prometheus-community.github.io/helm-charts
+  - name: metrics-server
+    url: https://kubernetes-sigs.github.io/metrics-server/
+
 releases:
   - name: ingress-nginx
     namespace: ingress-nginx
@@ -79,3 +84,19 @@ releases:
     version: 2.21.2
     values:
       - repo-helm-cluster-tools/uptime-kuma/values.yaml
+
+  - name: kube-prometheus-stack
+    namespace: monitoring
+    createNamespace: true
+    chart: prometheus-community/kube-prometheus-stack
+    version: 69.7.3
+    values:
+      - repo-helm-cluster-tools/prometheus-community/values.yaml
+
+  - name: metrics-server
+    namespace: monitoring
+    createNamespace: true
+    chart: metrics-server/metrics-server
+    version: 3.12.2
+    values:
+      - repo-helm-cluster-tools/metrics-server/values.yaml
