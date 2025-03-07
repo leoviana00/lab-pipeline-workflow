@@ -27,10 +27,22 @@ destroy:
 passwd:
 	@echo "JENKINS:"
 	@kubectl get secret -n jenkins jenkins -ojson | jq -r '.data."jenkins-admin-password"' | base64 -d 
+	@echo "\n"
+
 	@echo "\nSONARQUBE"
 	@echo "bs7&GoIQOs!YOHtc"
+	@echo "\n"
+
 	@echo "ARGOCD"
 	@kubectl get secret -n argocd argocd-initial-admin-secret -ojson | jq -r '.data.password' | base64 -d
-	@echo "\nGITEA"
+	@echo "\n"
+
+	@echo "GITEA"
 	@echo "user:gitea_admin"
 	@echo "pass:r8sA8CPHD9!bt6d"
+	@echo "\n"
+
+	@echo "GRAFANA:"
+	@echo "admin"
+	@kubectl get secret -n monitoring kube-prometheus-stack-grafana -ojson | jq -r '.data."admin-password"' | base64 -d
+	@echo "\n"
